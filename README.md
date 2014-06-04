@@ -155,6 +155,14 @@ The ["What is the iBeacon Bluetooth Profile"](http://stackoverflow.com/questions
 In order to turn your OSX Mavericks box into an iBeacon emitter, see Matthew Robinsons' [BeaconOX](https://github.com/mttrb/BeaconOSX).  
 
 
+## Logging 
+The code will log data to /var/logs/iBeacons.log if the file exists and is writeable. This can be ensured with
+
+sudo touch /var/logs/iBeacons.log
+
+sudo chmod a+w /var/logs/iBeacons.log
+
+(Added by David Johnston)
 
 ## Credits
 

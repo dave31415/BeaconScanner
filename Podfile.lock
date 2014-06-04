@@ -45,11 +45,12 @@ PODS:
   - libextobjc/RuntimeExtensions (0.4)
   - libextobjc/UmbrellaHeader (0.4)
   - ReactiveCocoa (2.3):
-    - ReactiveCocoa/Core
-    - ReactiveCocoa/no-arc
+    - ReactiveCocoa/UI
   - ReactiveCocoa/Core (2.3):
     - ReactiveCocoa/no-arc
   - ReactiveCocoa/no-arc (2.3)
+  - ReactiveCocoa/UI (2.3):
+    - ReactiveCocoa/Core
 
 DEPENDENCIES:
   - BlocksKit (~> 2.0.0)
@@ -57,8 +58,8 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 2.1)
 
 SPEC CHECKSUMS:
-  BlocksKit: c719258499c89fb43619abb434506a67b9e5332d
-  libextobjc: 2c9fc8226f0f38e562587f65172f93f0c9b4a47a
-  ReactiveCocoa: 1f6265f9d521923d3efcc37b00722cefc16df269
+  BlocksKit: c698d10e9da5b5f1b056ec960d72121d40ede0b6
+  libextobjc: ba42e4111f433273a886cd54f0ddaddb7f62f82f
+  ReactiveCocoa: 2066583826c17dde8e90c41e489f682048cc57c9
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.33.1

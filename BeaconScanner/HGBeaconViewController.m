@@ -65,6 +65,32 @@
             } else {
                 [self addBeaconsObject:beacon];
             }
+	    
+	    //Logging capability added, DaveJ
+	    NSString *rssi_str = [beacon.RSSI stringValue];
+	    NSString *major_str = [beacon.major stringValue];
+	    NSString *minor_str = [beacon.minor stringValue];
+	    NSString *uuid_str = [beacon.proximityUUID UUIDString];
+                
+	    //format the date
+	    NSDate *date_str = beacon.lastUpdated;
+	    static NSDateFormatter *dateFormatter;
+	    static dispatch_once_t onceToken;
+	    dispatch_once(&onceToken, ^{
+		dateFormatter = [[NSDateFormatter alloc] init];
+		[dateFormatter setDateFormat:@"MMM dd HH:mm:ss"];
+	      });
+	    NSString *formattedDateString = [dateFormatter stringFromDate:date_str];
+                
+	    //the complete string to be logged
+	    NSString *str= [NSString stringWithFormat:@"%@, %@, %@, %@, %@\n", uuid_str, major_str, minor_str, rssi_str,formattedDateString];
+                
+	    //Open file at end, write a line and close
+	    NSFileHandle *myHandle = [NSFileHandle fileHandleForUpdatingAtPath:@"/var/log/iBeacons.log"];
+	    [myHandle seekToEndOfFile];
+	    [myHandle writeData:  [str dataUsingEncoding:NSUTF8StringEncoding]];
+	    [myHandle closeFile];
+	    // End of logging additions
         }];
         
         // Setup a interval signal that will purge expired beacons (determined by a last update longer than HGBeaconTimeToLiveInterval) from the displayed list
