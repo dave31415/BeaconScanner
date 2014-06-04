@@ -146,16 +146,7 @@ It's best to use these updates to maintain a seperate list of nearby active beac
 
 In the application source, the class *HGBeaconViewController* provides a good example of how to do this. 
 
-## Learn More
-
-An excellent primer is [Adam Warski's post on "How iBeacons work?"](http://www.warski.org/blog/2014/01/how-ibeacons-work/).
-
-The ["What is the iBeacon Bluetooth Profile"](http://stackoverflow.com/questions/18906988/what-is-the-ibeacon-bluetooth-profile) thread on Stack Overflow is also very informative.
-
-In order to turn your OSX Mavericks box into an iBeacon emitter, see Matthew Robinsons' [BeaconOX](https://github.com/mttrb/BeaconOSX).  
-
-
-## Logging 
+## Logging
 The code will log data to /var/logs/iBeacons.log if the file exists and is writeable. This can be ensured with
 
 sudo touch /var/logs/iBeacons.log
@@ -164,8 +155,20 @@ sudo chmod a+w /var/logs/iBeacons.log
 
 (Added by David Johnston)
 
+
+
+## Learn More
+
+An excellent primer is [Adam Warski's post on "How iBeacons work?"](http://www.warski.org/blog/2014/01/how-ibeacons-work/).
+
+The ["What is the iBeacon Bluetooth Profile"](http://stackoverflow.com/questions/18906988/what-is-the-ibeacon-bluetooth-profile) thread on Stack Overflow is also very informative.
+
+In order to turn your OSX Mavericks box into an iBeacon emitter, see Matthew Robinsons' [BeaconOX](https://github.com/mttrb/BeaconOSX).  
+
 ## Credits
 
 Portions of *HGBeacon* were derived from a *BLCBeaconAdvertisementData*, by Matthew Robinson and part of [BeaconOX](https://github.com/mttrb/BeaconOSX).
 
 The "Radar" icon image the utility uses was created by [ricaodomaia](http://openclipart.org/user-detail/ricardomaia) and downloaded from [openclipart.org](http://openclipart.org/detail/122719/radar-by-ricardomaia) 
+
+David Johnston added logging
