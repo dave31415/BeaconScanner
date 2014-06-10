@@ -1,8 +1,10 @@
-BeaconScanner modified for logging
+This is a fork of the BeaconScanner app
+
+It is modified to include logging
 
 Installation :
 
-Chose a	place for the logfile. By default it will use /var/log/iBeacon.log
+Choose a place for the logfile. By default it will use /var/log/iBeacon.log
 
 Run this (as root)
 
@@ -18,7 +20,8 @@ HGBeaconViewController.m
 
 Open this repo in xcode (you need xcode installed) and click on the green arrow which will
 build the App and run it. You should see a window appear with the data and this should also 
-be written in the logfile. 
+be written into the logfile (check it!).
+
 
 
 
