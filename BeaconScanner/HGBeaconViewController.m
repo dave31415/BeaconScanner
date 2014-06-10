@@ -11,7 +11,8 @@
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "BlocksKit.h"
 #import "EXTScope.h"
-#define HGBeaconTimeToLiveInterval 15
+#define HGBeaconTimeToLiveInterval 10
+#define logfilepath "/var/log/iBeacon.log"
 @interface HGBeaconViewController()
 @property (strong) RACSignal *housekeepingSignal;
 @end
@@ -40,7 +41,7 @@
                 } else if (bluetoothState == HGBeaconScannerBluetoothStatePoweredOff) {
                     return @"Bluetooth is powered off";
                 } else if (bluetoothState == HGBeaconScannerBluetoothStatePoweredOn) {
-                    return @"Bluetooth is on and available";
+                    return @"Bluetooth is ON";
                 } else {
                     return @"Bluetooth state unknown";
                 }
@@ -86,7 +87,7 @@
 	    NSString *str= [NSString stringWithFormat:@"%@, %@, %@, %@, %@\n", uuid_str, major_str, minor_str, rssi_str,formattedDateString];
                 
 	    //Open file at end, write a line and close
-	    NSFileHandle *myHandle = [NSFileHandle fileHandleForUpdatingAtPath:@"/var/log/iBeacons.log"];
+	    NSFileHandle *myHandle = [NSFileHandle fileHandleForUpdatingAtPath:@logfilepath];
 	    [myHandle seekToEndOfFile];
 	    [myHandle writeData:  [str dataUsingEncoding:NSUTF8StringEncoding]];
 	    [myHandle closeFile];

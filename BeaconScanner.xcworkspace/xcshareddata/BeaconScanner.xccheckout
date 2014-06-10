@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>968D91A3-A928-4696-B15D-22830789BCC9</string>
+	<string>A3B183DF-FE35-4C31-8332-8470D6300ECD</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BeaconScanner</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F569FB03-A69D-465B-A856-F8AE4F4DCCBC</key>
-		<string>https://github.com/mlwelles/BeaconScanner.git</string>
+		<key>5B19E226-0958-41DA-A74D-4C2596F015DB</key>
+		<string>ssh://github.com/dave31415/BeaconScanner.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>BeaconScanner.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F569FB03-A69D-465B-A856-F8AE4F4DCCBC</key>
+		<key>5B19E226-0958-41DA-A74D-4C2596F015DB</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/mlwelles/BeaconScanner.git</string>
+	<string>ssh://github.com/dave31415/BeaconScanner.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F569FB03-A69D-465B-A856-F8AE4F4DCCBC</string>
+	<string>5B19E226-0958-41DA-A74D-4C2596F015DB</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F569FB03-A69D-465B-A856-F8AE4F4DCCBC</string>
+			<string>5B19E226-0958-41DA-A74D-4C2596F015DB</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BeaconScanner</string>
 		</dict>
