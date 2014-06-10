@@ -15,7 +15,9 @@ or
 sudo ./setup_log.sh /path/to/logfile
 
 If you chose a non-default logfile name, edit this line in 
+
 HGBeaconViewController.m
+
 define logfilepath "/var/log/iBeacon.log"
 
 Open this repo in xcode (you need xcode installed) and click on the green arrow which will
