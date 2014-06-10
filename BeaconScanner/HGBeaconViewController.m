@@ -12,7 +12,7 @@
 #import "BlocksKit.h"
 #import "EXTScope.h"
 #define HGBeaconTimeToLiveInterval 10
-#define logfilepath "/var/log/iBeacon.log"
+#define logfilepath "/var/log/iBeacons.log"
 @interface HGBeaconViewController()
 @property (strong) RACSignal *housekeepingSignal;
 @end

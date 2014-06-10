@@ -1,10 +1,10 @@
 #!/bin/bash
 #run as root, e.g. sudo ./setup_logfile.sh or sudo ./setup_logfile /Users/homer/myBeacons.log
-#by default, it will use /var/log/iBeacon.log
+#by default, it will use /var/log/iBeacons.log
 
 if [ "$#" -ne 1 ]; then
     echo "Using default logfile location"
-    logfile="/var/log/iBeacon.log"
+    logfile="/var/log/iBeacons.log"
 else 
     logfile=$1
 fi
